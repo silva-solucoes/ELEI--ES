@@ -18,12 +18,12 @@
         <div class="nghost flex flex-row flex-wrap items-center h-20">
             <div role="button" tabindex="0" class="leading-tight tracking-tight focus-ring" title="Clique para escolher outra eleição" aria-disabled="false">
                 <div class="flex flex-row items-center">
-                    <i class="bi bi-list" style="font-size: 18px;"></i>
+                    
                     <img src="{{ asset('img/logo.png') }}" height="46" role="presentation" class="ml-3">
                     <div class="ml-5 mr-2">
                         <span class="normal-text"><b class="bold-text">SGPE</b> - Pesquisa Eleitoral 2024</span>
                     </div>
-                    <i class="bi bi-chevron-down md hydrated" style="font-size: 18x;"></i>
+                    
                 </div>
             </div>
             <nav class="self-end ml-auto pt-2">

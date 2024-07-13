@@ -4,11 +4,11 @@
     --area-left: env(safe-area-inset-left);
     --area-right: env(safe-area-inset-right);
 
-    --bg-primary: #afafd3;
-    --bg-footer: #5a589b;
+    --bg-primary: #bababb;
+    --bg-footer: #7b7a7a;
 
-    --color-primary:#5a589b;
-    --color-branca: #f3f3f3;
+    --color-primary:#010113;
+    --color-branca: #010113;
 }
 
 /* Classes Utilitárias */
@@ -340,7 +340,7 @@ h1, h2, h3, h4, li, ol, p, ul {
 }
 
 .text-roxo{
-    color: #59358c;
+    color: #010113;
 }
 
 .mr-3 {
