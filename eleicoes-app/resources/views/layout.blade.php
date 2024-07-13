@@ -9,6 +9,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
     <!-- Arquivos CSS do Bootstrap -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -18,12 +19,12 @@
         <div class="nghost flex flex-row flex-wrap items-center h-20">
             <div role="button" tabindex="0" class="leading-tight tracking-tight focus-ring" title="Clique para escolher outra eleição" aria-disabled="false">
                 <div class="flex flex-row items-center">
-                    
-                    <img src="{{ asset('img/logo.png') }}" height="46" role="presentation" class="ml-3">
-                    <div class="ml-5 mr-2">
+
+                    <img src="{{ asset('img/SGPE-logo.png') }}" height="46" role="presentation" class="ml-3">
+                    <!--<div class="ml-5 mr-2">
                         <span class="normal-text"><b class="bold-text">SGPE</b> - Pesquisa Eleitoral 2024</span>
-                    </div>
-                    
+                    </div>-->
+
                 </div>
             </div>
             <nav class="self-end ml-auto pt-2">
@@ -50,34 +51,53 @@
 
     @yield("conteudo")
 
-    <div class="footer">
-        <div class="container">
-            <footer class="nghost-footer footer-content flex flex-row items-center justify-between text-sm font-bold leading-relaxed tracking-tight">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="{{ url('/') }}">Início</a></li>
-                        <li><a href="{{ url('/eleicao/favoritos') }}">Favoritos</a></li>
-                        <li><a href="{{ url('/eleicao/dados-de-urna') }}">Dados de Urna</a></li>
-                        <li><a href="{{ url('/termos-de-uso') }}">Termos de uso</a></li>
+    <footer id="footer" class="footer position-relative light-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Transmissão</a></li>
+                        <li><a href="#">Termo de Serviços</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
                     </ul>
-                    <div class="version">Versão 22.11.09 (9fadcca)</div>
-                </nav>
-                <div class="app-section">
-                    <section class="app-download">
-                        <h4>Baixe nosso app</h4>
-                        <div class="app-buttons">
-                            <a href="#" target="_blank">
-                                <img src="{{ asset('img/logo-footer.png') }}" alt="Disponível no Google Play" width="120" height="80">
-                            </a>
-                        </div>
-                    </section>
                 </div>
-                <a href="//tse.jus.br/" class="tse-logo">
-                    <img src="{{ asset('assets/tse-claro.svg') }}" width="128" height="58" alt="Tribunal Superior Eleitoral">
-                </a>
-            </footer>
+
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Produto:</h4>
+                    <a href="#" target="_blank">
+                        <img src="{{ asset('img/logo-footer.png') }}" alt="Disponível no Google Play" width="120" height="80">
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>Desenvolvido por</h4>
+                    <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+
+                </div>
+
+            </div>
         </div>
-    </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Pesquisa Política</strong><span>Todos os direitos reservados</span></p>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you've purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                Versão <span>1.0</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/popper.min.js') }}" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 
 </html>

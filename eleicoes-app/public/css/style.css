@@ -442,3 +442,57 @@ h1, h2, h3, h4, li, ol, p, ul {
     font-size: 0.75rem;
     font-weight: 600;
 }
+
+.footer {
+    color: var(--color-primary);
+    background-color: var(--bg-footer);
+    font-size: 14px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.footer .footer-top {
+    padding-top: 50px;
+}
+
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px;
+    }
+}
+
+.footer .footer-about .logo {
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer .footer-about .logo span {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--heading-font);
+    color: var(--color-primary);
+}
+
+.footer .footer-about .logo {
+    line-height: 1;
+    margin-bottom: 25px;
+}
