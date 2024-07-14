@@ -48,7 +48,7 @@
                 <div class="text-gray-550 text-xs leading-none">PESQUISADOR – <span aria-label="Número 22.">01</span></div>
             </div>
             <div class="flex flex-col-reverse ml-6 text-right">
-                <div class="font-bold text-ion-tertiary text-sm">0,00% &nbsp;•&nbsp; 0</div>
+                <div class="font-bold text-ion-tertiary text-sm">0,00% &nbsp;•&nbsp; 0.000,00</div>
                 <div class="text-gray-550 text-xs leading-none">Avaliações computadas</div>
             </div>
         </div>
