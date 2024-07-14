@@ -4,7 +4,7 @@
 
 <div class="nghost flex-1">
     <div class="mt-4 mb-2">
-        <label class="text-sm font-semibold activatable color-primary button-small button-clear">Transmissão de Dados off-line</label>
+        <label class="text-sm bold-text font-semibold activatable color-primary button-small button-clear">Transmissão de Dados off-line</label>
     </div>
     <div class="p-2 pb-3 md:p-3 md:pt-4 bg-white rounded shadow-md text-gray-800 mb-3">
         <div class="flex flex-row items-center">
@@ -24,59 +24,95 @@
     </div>
 </div>
 
+<div class="nghost rounded flex-1 flex flex-row px-4 pt-2 pb-3 bg-white">
+    <div class="flex flex-row px-4 pt-2 pb-3">
+        <app-foto-grafico-candidato class="flex-none">
+            <div class="foto-grafico-pad flex">
+                <div class="flex flex-col rounded-full overflow-hidden">
+                    <app-foto-candidato class="rounded-none" role="img">
+                        <img src="https://t4.ftcdn.net/jpg/00/64/67/27/360_F_64672736_U5kpdGs9keUll8CRQ3p3YaEv2M6qkVY5.jpg" width="100" height="100" alt="Foto">
+                    </app-foto-candidato>
+                    <div></div>
+                </div>
+            </div>
+            <svg class="absolute inset-0" viewBox="0 0 42 42">
+                <circle stroke="#f4f4f4" cx="21" cy="21" r="20"></circle>
+                <circle class="stroke-ion-tertiary transition-stroke" cx="21" cy="21" r="20" stroke-dasharray="61.700879716503536 63.96282642708819" stroke-dashoffset="31.41592653589793"></circle>
+            </svg>
+        </app-foto-grafico-candidato>
+    </div>
+    <div class="flex-2 ml-5 pt-1">
+        <div class="flex flex-row items-start">
+            <div class="flex-2 flex flex-col-reverse">
+                <div class="text-gray-700 text-sm font-bold tracking-tight">NOME DO PESQUISADOR</div>
+                <div class="text-gray-550 text-xs leading-none">PESQUISADOR – <span aria-label="Número 22.">01</span></div>
+            </div>
+            <div class="flex flex-col-reverse ml-6 text-right">
+                <div class="font-bold text-ion-tertiary text-sm">0,00% &nbsp;•&nbsp; 0</div>
+                <div class="text-gray-550 text-xs leading-none">Avaliações computadas</div>
+            </div>
+        </div>
+        <app-pilula-situacao class="mt-2 text-xs" style="display: block;">
+            <ul class="pilula-container flex flex-row flex-wrap font-bold tracking-tighter">
+                <div class="bg-gray-300 pilula text-gray-600">PESQUISADOR</div>
+            </ul>
+        </app-pilula-situacao>
+    </div>
+</div>
+
 <div class="nghost flex-1">
     <div class="mt-4 mb-2">
-        <label class="text-sm font-semibold activatable color-primary button-small button-clear">Preencha o formulário</label>
+        <label class="text-sm bold-text font-semibold activatable color-primary button-small button-clear">Formulário de Avaliação</label>
     </div>
     <div class="p-2 pb-3 md:p-3 md:pt-4 bg-white rounded shadow-md text-gray-800 mb-3">
         <form>
             <div class="mb-3">
-                <label class="form-label">Como você avalia a administração atual do prefeito?</label>
-                <div class="form-check">
+                <label class="form-label">Como você avalia a administração atual do prefeito?</label><br>
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="avaliacaoPrefeito" value="excelente" id="avaliacaoPrefeito1">
                     <label class="form-check-label" for="avaliacaoPrefeito1">Excelente</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="avaliacaoPrefeito" value="boa" id="avaliacaoPrefeito2">
                     <label class="form-check-label" for="avaliacaoPrefeito2">Boa</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="avaliacaoPrefeito" value="regular" id="avaliacaoPrefeito3">
                     <label class="form-check-label" for="avaliacaoPrefeito3">Regular</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="avaliacaoPrefeito" value="ruim" id="avaliacaoPrefeito4">
                     <label class="form-check-label" for="avaliacaoPrefeito4">Ruim</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="avaliacaoPrefeito" value="pessima" id="avaliacaoPrefeito5">
                     <label class="form-check-label" for="avaliacaoPrefeito5">Péssima</label>
                 </div>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">A gestão atual tem atendido suas expectativas em relação à saúde pública?</label>
-                <div class="form-check">
+                <label class="form-label">A gestão atual tem atendido suas expectativas em relação à saúde pública?</label><br>
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="saudePublica" value="sim" id="saudePublica1">
                     <label class="form-check-label" for="saudePublica1">Sim</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="saudePublica" value="parcialmente" id="saudePublica2">
                     <label class="form-check-label" for="saudePublica2">Parcialmente</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="saudePublica" value="nao" id="saudePublica3">
                     <label class="form-check-label" for="saudePublica3">Não</label>
                 </div>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Você considera que a segurança pública na cidade melhorou nos últimos anos?</label>
-                <div class="form-check">
+                <label class="form-label">Você considera que a segurança pública na cidade melhorou nos últimos anos?</label><br>
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="segurancaPublica" value="sim" id="segurancaPublica1">
                     <label class="form-check-label" for="segurancaPublica1">Sim</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="segurancaPublica" value="nao" id="segurancaPublica2">
                     <label class="form-check-label" for="segurancaPublica2">Não</label>
                 </div>

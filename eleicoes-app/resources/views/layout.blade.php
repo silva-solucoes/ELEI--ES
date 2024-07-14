@@ -15,16 +15,14 @@
 </head>
 
 <body>
-    <div class="pt-safe bg-ion-primary-alt text-roxo">
+    <div class="header-fixed bg-ion-primary-alt text-roxo">
         <div class="nghost flex flex-row flex-wrap items-center h-20">
             <div role="button" tabindex="0" class="leading-tight tracking-tight focus-ring" title="Clique para escolher outra eleição" aria-disabled="false">
                 <div class="flex flex-row items-center">
-
                     <img src="{{ asset('img/SGPE-logo.png') }}" height="46" role="presentation" class="ml-3">
                     <!--<div class="ml-5 mr-2">
                         <span class="normal-text"><b class="bold-text">SGPE</b> - Pesquisa Eleitoral 2024</span>
                     </div>-->
-
                 </div>
             </div>
             <nav class="self-end ml-auto pt-2">
@@ -35,19 +33,23 @@
                 </ul>
             </nav>
         </div>
-    </div>
-    <div class="py-2 localidade-pad bg-ion-primary bg-decorado bg-localidade rounded-b text-roxo">
-        <div class="container mx-auto">
-            <div class="nghost flex flex-row items-center">
-                <div title="Alterar localidade" role="button" class="py-3 focus-ring" tabindex="0" aria-disabled="false">
-                    <div class="flex items-center lg:text-2xl xl:text-3xl">
-                        <img src="{{ asset('img/marcador.png') }}" width="25" height="25" class="text-white text-xl md hydrated" role="img">
-                        <div class="ml-2 mr-3 text-roxo bold-text leading-tight"> Lajes, Rio Grande do Norte </div>
+
+        <div class="py-2 localidade-pad bg-ion-primary bg-decorado bg-localidade rounded-b text-roxo">
+            <div class="container mx-auto">
+                <div class="nghost flex flex-row items-center">
+                    <div title="Alterar localidade" role="button" class="py-3 focus-ring" tabindex="0" aria-disabled="false">
+                        <div class="flex items-center lg:text-2xl xl:text-3xl">
+                            <img src="{{ asset('img/marcador.png') }}" width="25" height="25" class="text-white text-xl md hydrated" role="img">
+                            <div class="ml-2 mr-3 text-roxo bold-text leading-tight"> Lajes, Rio Grande do Norte </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Espaço reservado para o header fixo -->
+    <div class="header-placeholder"></div>
 
     @yield("conteudo")
 
