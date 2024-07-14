@@ -25,6 +25,7 @@
 </div>
 
 <div class="nghost rounded flex-1 flex flex-row px-4 pt-2 pb-3 bg-white">
+
     <div class="flex flex-row px-4 pt-2 pb-3">
         <app-foto-grafico-candidato class="flex-none">
             <div class="foto-grafico-pad flex">
@@ -41,6 +42,7 @@
             </svg>
         </app-foto-grafico-candidato>
     </div>
+
     <div class="flex-2 ml-5 pt-1">
         <div class="flex flex-row items-start">
             <div class="flex-2 flex flex-col-reverse">

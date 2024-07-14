@@ -612,6 +612,10 @@ a{
     background-size: cover;
 }
 
+.rounded-none{
+    border-radius: 0;
+}
+
 .foto-img{
     width: 100%;
     height: 100%;
